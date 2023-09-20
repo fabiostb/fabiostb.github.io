@@ -1,0 +1,21 @@
+<script>
+    function addClient(name) {
+        document.getElementById('list').innerHTML += name + "<br>"
+    }
+</script>
+
+<body style="background-color: black; color: white;">
+    yes sir! it's works
+    <br>
+
+    <label>Name
+        <input id="firstName" />
+    </label> <button onclick="addClient(document.getElementById('firstName').value)">+</button>
+
+    <div id="list">
+
+    </div>
+
+    <br>
+    <button onclick="window.location.replace('index.html');"><< back</button>
+</body>

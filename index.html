@@ -1,12 +1,55 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="styles.css">
+
+        <style>
+            body {
+                background-color: #061123;
+                height: 100vh;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+            }
+
+            .snow {
+                width: 500px;
+                height: 100px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50%3B' xml:space='preserve'%3E%3Cstyle type='text/css'%3E.st1%7Bopacity:0.3%3Bfill:%23FFFFFF%3B%7D.st3%7Bopacity:0.1%3Bfill:%23FFFFFF%3B%7D%3C/style%3E%3Ccircle class='st1' cx='5' cy='8' r='1'/%3E%3Ccircle class='st1' cx='38' cy='3' r='1'/%3E%3Ccircle class='st1' cx='12' cy='4' r='1'/%3E%3Ccircle class='st1' cx='16' cy='16' r='1'/%3E%3Ccircle class='st1' cx='47' cy='46' r='1'/%3E%3Ccircle class='st1' cx='32' cy='10' r='1'/%3E%3Ccircle class='st1' cx='3' cy='46' r='1'/%3E%3Ccircle class='st1' cx='45' cy='13' r='1'/%3E%3Ccircle class='st1' cx='10' cy='28' r='1'/%3E%3Ccircle class='st1' cx='22' cy='35' r='1'/%3E%3Ccircle class='st1' cx='3' cy='21' r='1'/%3E%3Ccircle class='st1' cx='26' cy='20' r='1'/%3E%3Ccircle class='st1' cx='30' cy='45' r='1'/%3E%3Ccircle class='st1' cx='15' cy='45' r='1'/%3E%3Ccircle class='st1' cx='34' cy='36' r='1'/%3E%3Ccircle class='st1' cx='41' cy='32' r='1'/%3E%3C/svg%3E");
+                background-position: 0px 0px;
+                animation: animatedBackground 10s linear infinite;
+            }
+
+            .snow div {
+                width: 100%;
+                height: 100%;
+                background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50%3B' xml:space='preserve'%3E%3Cstyle type='text/css'%3E.st1%7Bopacity:0.7%3Bfill:%23FFFFFF%3B%7D.st3%7Bopacity:0.1%3Bfill:%23FFFFFF%3B%7D%3C/style%3E%3Ccircle class='st3' cx='4' cy='14' r='1'/%3E%3Ccircle class='st3' cx='43' cy='3' r='1'/%3E%3Ccircle class='st3' cx='31' cy='30' r='2'/%3E%3Ccircle class='st3' cx='19' cy='23' r='1'/%3E%3Ccircle class='st3' cx='37' cy='22' r='1'/%3E%3Ccircle class='st3' cx='43' cy='16' r='1'/%3E%3Ccircle class='st3' cx='8' cy='45' r='1'/%3E%3Ccircle class='st3' cx='29' cy='39' r='1'/%3E%3Ccircle class='st3' cx='13' cy='37' r='1'/%3E%3Ccircle class='st3' cx='47' cy='32' r='1'/%3E%3Ccircle class='st3' cx='15' cy='4' r='2'/%3E%3Ccircle class='st3' cx='9' cy='27' r='1'/%3E%3Ccircle class='st3' cx='30' cy='9' r='1'/%3E%3Ccircle class='st3' cx='25' cy='15' r='1'/%3E%3Ccircle class='st3' cx='21' cy='45' r='2'/%3E%3Ccircle class='st3' cx='42' cy='45' r='1'/%3E%3C/svg%3E");
+                background-position: 0px 0px;
+                animation: animatedBackground 15s linear infinite;
+            }
+
+            @keyframes animatedBackground {
+                0% {
+                    background-position: 0 0;
+                }
+                100% {
+                    background-position: 0px 300px;
+                }
+            }
+
+        </style>
         <title>My first web page</title>
     </head>
-    <body>
-        Hello World
+    <body style="background-color: black; color: aquamarine; text-align: center">
+
+        <div class="snow" style="text-align: center">Hello World</div>
+
+        <a href="./page2.html">
+            <img alt="Venon" aria-hidden="true" class="_28lPU _1_vBa" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0f23aa0a-5551-42e3-8820-8fba46c7615a/d4qd94k-0e9758a1-7c6f-479e-856b-30a1dc4d0488.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBmMjNhYTBhLTU1NTEtNDJlMy04ODIwLThmYmE0NmM3NjE1YVwvZDRxZDk0ay0wZTk3NThhMS03YzZmLTQ3OWUtODU2Yi0zMGExZGM0ZDA0ODguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.vdjpjNGKVJKMKKEXPh1cZ7KHowtA64CbLaBQ08LpAmU" srcset="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0f23aa0a-5551-42e3-8820-8fba46c7615a/d4qd94k-0e9758a1-7c6f-479e-856b-30a1dc4d0488.jpg/v1/fit/w_375,h_497,q_70,strp/venon_by_bennyotavio_d4qd94k-375w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzBmMjNhYTBhLTU1NTEtNDJlMy04ODIwLThmYmE0NmM3NjE1YVwvZDRxZDk0ay0wZTk3NThhMS03YzZmLTQ3OWUtODU2Yi0zMGExZGM0ZDA0ODguanBnIiwid2lkdGgiOiI8PTc3MiJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.d8mmNKo6J2LXfG4Unsl1JaPCVqV_rDI9gh8RfeYnvzs 375w, https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0f23aa0a-5551-42e3-8820-8fba46c7615a/d4qd94k-0e9758a1-7c6f-479e-856b-30a1dc4d0488.jpg/v1/fit/w_414,h_549,q_70,strp/venon_by_bennyotavio_d4qd94k-414w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzBmMjNhYTBhLTU1NTEtNDJlMy04ODIwLThmYmE0NmM3NjE1YVwvZDRxZDk0ay0wZTk3NThhMS03YzZmLTQ3OWUtODU2Yi0zMGExZGM0ZDA0ODguanBnIiwid2lkdGgiOiI8PTc3MiJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.d8mmNKo6J2LXfG4Unsl1JaPCVqV_rDI9gh8RfeYnvzs 414w, https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0f23aa0a-5551-42e3-8820-8fba46c7615a/d4qd94k-0e9758a1-7c6f-479e-856b-30a1dc4d0488.jpg/v1/fit/w_750,h_994,q_70,strp/venon_by_bennyotavio_d4qd94k-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzBmMjNhYTBhLTU1NTEtNDJlMy04ODIwLThmYmE0NmM3NjE1YVwvZDRxZDk0ay0wZTk3NThhMS03YzZmLTQ3OWUtODU2Yi0zMGExZGM0ZDA0ODguanBnIiwid2lkdGgiOiI8PTc3MiJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.d8mmNKo6J2LXfG4Unsl1JaPCVqV_rDI9gh8RfeYnvzs 750w, https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0f23aa0a-5551-42e3-8820-8fba46c7615a/d4qd94k-0e9758a1-7c6f-479e-856b-30a1dc4d0488.jpg/v1/fit/w_772,h_1024,q_70,strp/venon_by_bennyotavio_d4qd94k-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzBmMjNhYTBhLTU1NTEtNDJlMy04ODIwLThmYmE0NmM3NjE1YVwvZDRxZDk0ay0wZTk3NThhMS03YzZmLTQ3OWUtODU2Yi0zMGExZGM0ZDA0ODguanBnIiwid2lkdGgiOiI8PTc3MiJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.d8mmNKo6J2LXfG4Unsl1JaPCVqV_rDI9gh8RfeYnvzs 1544w" sizes="(min-width: 1152px) 70vw, 100vw" fetchpriority="high" style="width: 459.129px; height: 609px;">
+        </a>
+
+        <br>
+        <button onclick="window.location.replace('./page1.html');">clique ici</button>
+
     </body>
 </html>
-
-
